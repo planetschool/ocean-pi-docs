@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+# Getting Started
+
 Your project will set the background color of an image to the color that Ocean Pi detects aboard *Wonder*. This will make the ship more colorful below deck for the sailors on board. Your code will use the color luminosity sensor on the Ocean Pi computer’s Sense HAT to make this happen.
 
 This project gratefully borrows from the Astro Pi “Mission Zero” project, which was created under a Creative Commons license. This project shares that license. You can refer to that project as you go, but we have made a few useful edits:
@@ -9,7 +11,7 @@ This project gratefully borrows from the Astro Pi “Mission Zero” project, wh
 
 2. If you want an extra challenge, you can add on code to make your image move in response to the ship’s movement. This is an optional extension.
 
-#   You will need
+## You will need
 
 You will use a Sense HAT emulator in a web browser to create your program. **You do not need a Raspberry Pi computer or a Sense HAT.** 
 
@@ -22,14 +24,14 @@ If you have a Raspberry Pi computer with a Sense HAT, then you should use that s
 
 You can find the color sensor above the joystick and slightly to the right labeled “COLOUR.”
 
-#   You will learn
+## You will learn
 You will learn about the Ocean Pi computer and how to control it, including how to:
 
 * Create color variables to use in your image
 * Design and display a pixel art image on the Sense HAT
 * Sense the color of light on board Wonder
 
-#   Let’s get started
+## Let’s get started
 You will be using Trinket* for writing your code. Trinket has developed a Sense HAT emulator that allows you to change the color that the Sense HAT is seeing, move it around to activate its motion sensors, and manipulate the temperature and humidity.
 
 You can see a demo of the Sense HAT emulator [here](https://trinket.io/sense-hat). In order to save your work, you will need to create a free Trinket account, which you can do [here](https://trinket.io/signup).
