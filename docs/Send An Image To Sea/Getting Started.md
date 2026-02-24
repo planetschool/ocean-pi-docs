@@ -15,8 +15,8 @@ You will use a Sense HAT emulator in a web browser to create your program. **You
 
 <img
   src={require('./img/colour_sensor.jpg').default}
-  style={{ float: 'right', marginLeft: '16px', width: '250px' }}
-  />
+  className="imageRightHalf"
+/>
 
 If you have a Raspberry Pi computer with a Sense HAT, then you should use that so you can see the LED matrix light up and observe the color sensor changing the light color in real time. Just make sure you have a Sense HAT v. 2.0 because the first version of a Sense HAT does not have a color sensor.
 

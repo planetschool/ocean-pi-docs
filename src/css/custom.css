@@ -34,3 +34,10 @@
   margin-left: 16px;
   width: 500px;
 }
+
+.imageRightHalf {
+  float: right;
+  width: 50%;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
