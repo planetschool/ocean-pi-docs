@@ -34,6 +34,6 @@ You will be using Trinket* for writing your code. Trinket has developed a Sense 
 
 You can see a demo of the Sense HAT emulator [here](https://trinket.io/sense-hat). In order to save your work, you will need to create a free Trinket account, which you can do [here](https://trinket.io/signup).
 
-
+![Emulator Screenshot](./img/emulator_screenshot.png)
 
 **We are aware that Trinket is shutting down in August 2026. We are searching for an alternative but, for now, Trinket is still a great platform for Ocean Pi.*
