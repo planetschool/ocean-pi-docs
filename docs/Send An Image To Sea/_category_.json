@@ -1,0 +1,8 @@
+{
+  "label": "Send An Image To Sea",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Design a personalized image on the Sense HAT’s LED array and send it to our ship for our sailors to see as they go about their duties."
+  }
+}
