@@ -12,10 +12,14 @@ The first and arguably the most important step of this project is to design your
 
 Here is the code for our whale, which is the creature we will use throughout this tutorial. See if you can follow along with what is happening in this code snippet, even if the exact syntax doesn’t fully make sense. The code is explained below.
 
-```
-# Libraries
+```python
+## Libraries
 from sense_hat import SenseHAT
 my_sense_hat = SenseHAT()
+
+# -------------------------------
+# Creature design
+# -------------------------------
 
 d = (255, 255, 255)
 f = (25, 25, 112) 
