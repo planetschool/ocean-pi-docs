@@ -13,7 +13,7 @@ This project gratefully borrows from the Astro Pi “Mission Zero” project, wh
 
 You will use a Sense HAT emulator in a web browser to create your program. **You do not need a Raspberry Pi computer or a Sense HAT.** 
 
-<img style="float: right;" src="./img/colour_sensor.jpg">
+<img style="float: right;" src="./img/colour_sensor.jpg"/>
 
 If you have a Raspberry Pi computer with a Sense HAT, then you should use that so you can see the LED matrix light up and observe the color sensor changing the light color in real time. Just make sure you have a Sense HAT v. 2.0 because the first version of a Sense HAT does not have a color sensor.
 
