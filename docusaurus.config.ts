@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://wiki.oceanpi.org',
+  url: 'https://learn.oceanpi.org',
   trailingSlash: false,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
@@ -23,8 +23,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'thaneofcawddor', // Usually your GitHub org/user name.
-  projectName: 'ocean-pi-wiki', // Usually your repo name.
+  organizationName: 'planetschool', // Usually your GitHub org/user name.
+  projectName: 'ocean-pi-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -72,21 +72,22 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Ocean Pi Wiki',
+      title: 'Ocean Pi Projects',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Tutorials',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {href: 'https://oceanpi.org', label: 'Ocean Pi Homepage', position: 'left'},
         {
-          href: 'https://github.com/planetschool/ocean-pi-wiki',
+          href: 'https://github.com/planetschool/ocean-pi-docs',
           label: 'GitHub',
           position: 'right',
         },
