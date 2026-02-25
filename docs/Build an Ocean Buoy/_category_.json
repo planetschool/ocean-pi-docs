@@ -1,0 +1,8 @@
+{
+  "label": "Build an Ocean Buoy",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Construct a replica of the Ocean Pi buoy and deploy it in your area to gather data about a river, lake, or ocean."
+  }
+}
