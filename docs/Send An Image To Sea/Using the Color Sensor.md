@@ -24,8 +24,8 @@ The following code should be added to your existing project after what you have 
 # -------------------------------
 
 ## Set up the sensor
-sense.color.gain = 60 #Set the sensitivity of the sensor
-sense.color.integration_cycles = 64 #Interval at which readings will be taken
+my_sense_hat.color.gain = 60 #Set the sensitivity of the sensor
+my_sense_hat.color.integration_cycles = 64 #Interval at which readings will be taken
 ```
 
 ## Change the background color
