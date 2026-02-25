@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-Before you begin this project, please consider completing our [Ocean Creature GIF project](/dcbca9ac5e3f4388b0106b1ba652aee2?pvs=25) first, which is a good introduction for Python and Raspberry Pi beginners. We will be building on skills that were introduced in that project.
+Before you begin this project, please consider completing our Ocean Creature GIF project first, which is a good introduction for Python and Raspberry Pi beginners. We will be building on skills that were introduced in that project.
 
 This project cannot be completed using the Trinket emulator; it requires a physical Raspberry Pi and additional hardware depending on how far you go. We will list all of the hardware we have used in our installations. If you make modifications or additions, we would love to know about how it goes!
 
