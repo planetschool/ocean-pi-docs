@@ -9,8 +9,8 @@ thane:
     github: thaneofcawddor
     newsletter: https://planetschool.substack.com/
 
-slorber:
-  name: Sébastien Lorber
+aram:
+  name: Aram Carpenter
   title: Docusaurus maintainer
   url: https://sebastienlorber.com
   image_url: https://github.com/slorber.png
@@ -21,4 +21,3 @@ slorber:
     x: sebastienlorber
     linkedin: sebastienlorber
     github: slorber
-    newsletter: https://thisweekinreact.com
