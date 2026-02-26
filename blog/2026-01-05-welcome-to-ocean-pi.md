@@ -4,9 +4,7 @@ title: Welcome to Ocean Pi
 authors: thane
 ---
 
-This is the summary of a very long blog post,
-
-Use a `<!--` `truncate` `-->` comment to limit blog post size in the list view.
+Opening post on why we are building Ocean Pi.
 
 <!-- truncate -->
 
