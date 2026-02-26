@@ -1,12 +1,9 @@
 ---
 id: intro
-title: Getting Started
+title: Getting Started with Tutorials
+sidebar_position: 1
 ---
 
-# Ocean Pi
+# Getting Started with Tutorials
 
-Welcome to Ocean Pi.
-
-- What it is
-- How the system fits together
-- Where to start
+Welcome to Ocean Pi. We are still building this page :/

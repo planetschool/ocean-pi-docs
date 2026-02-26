@@ -1,14 +1,13 @@
-yangshun:
-  name: Yangshun Tay
-  title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
-  url: https://linkedin.com/in/yangshun
-  image_url: https://github.com/yangshun.png
-  page: true
+thane:
+  name: Thane Robinson
+  title: Ocean Pi Project Lead
+  url: https://thane.pizza
+  image_url: https://avatars.githubusercontent.com/u/5974612?v=4
+  page: false
   socials:
-    x: yangshunz
-    linkedin: yangshun
-    github: yangshun
-    newsletter: https://www.greatfrontend.com
+    linkedin: thanerobinson
+    github: thaneofcawddor
+    newsletter: https://planetschool.substack.com/
 
 slorber:
   name: Sébastien Lorber
