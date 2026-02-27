@@ -116,6 +116,10 @@ const config: Config = {
               label: 'Discord',
               href: 'https://discord.gg/2FuSgvaC',
             },
+            {
+              label: 'Substack',
+              href: 'https://oceanpi.substack.com',
+            },
           ],
         },
         {
