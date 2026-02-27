@@ -4,6 +4,8 @@ title: Documentation Update
 authors: thane
 ---
 
+![screenshot of our documentation site](/img/documentation-capture.png)
+
 The Ocean Pi Learning Platform (learn.oceanpi.org) was built to transform our internal technical knowledge into a structured, scalable, and publicly accessible education system. What began as scattered Google Docs has evolved into a modern documentation and publishing platform designed to support students, collaborators, and future contributors to the Ocean Pi ecosystem.
 
 Below is a summary of the major milestones in bringing learn.oceanpi.org online.
