@@ -8,11 +8,11 @@ In the last section, you successfully grabbed humidity data from the BME280 sens
 
 Once you have your account, log in and create a new device. You can find "Devices" in the left navigation panel under "Entities." Your device list will be empty, so click "+ Add device" and name it whatever you like. In the screenshot below, we already have several devices added already from our student projects. 
 
-![Thingsboard dashboard](./img/create_device.jpeg)
+![Thingsboard dashboard](./img/create_device.png)
 
 You may have to also create a device profile—just fill in the minimum required, like the profile name, and leave everything else alone. Then click "Add" and you should see your device in the list. Now, click on your device and click "Copy Access Token". 
 
-![Thingsboard access token](./img/copy_token.jpeg)
+![Thingsboard access token](./img/copy_token.png)
 
 Go to your code and create a new section called `## Dashboard` with a variable named `THINGSBOARD_TOKEN` and paste your access token into this variable. Your code should now look like this:
 
@@ -50,6 +50,9 @@ Once you type this, your Terminal will open a document called ".bashrc". Use the
 ```bash
 THINGSBOARD_TOKEN = “al66SHBwYLSHRBuZrRwh”
 ```
+
+![Editing bashrc](./img/edit_bashrc.png)
+
 Be sure to replace my fake token above with your actual token. To save, hit CTRL+X on your keyboard and type "Y" when asked if you want to save your changes. Now we can replace the token in your code with a command to grab the variable `THINGSBOARD_TOKEN` from the Raspberry Pi operating system. We will need to import a library called `os` in order to do this, so notice the two changes to your code below:
 
 ```python
