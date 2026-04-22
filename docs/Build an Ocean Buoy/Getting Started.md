@@ -22,7 +22,7 @@ sudo apt install python3-dev python3-pip libffi-dev build-essential libgpiod-dev
 sudo apt install -y i2c-tools
 ```
 
-Installing libraries and dependencies (other software that your code will depend on) can feel tedious as you wait for progress bars to make their way to 100%, but view it as assembling your tools, cleaning the shop, and getting ready to build. It is essential.
+Installing libraries and dependencies (other software that your code will depend on) can feel tedious as you wait for progress bars to make their way to 100%, but view it as assembling your tools, cleaning the shop, and getting ready to build. It is essential. Also, you will learn pretty quickly that software is very precise and detail-oriented: you need to type commands and write code *consistently*, which means writing Terminal commands exactly as they are written, using capital vs lowercase properly, and brushing up on your spelling.
 
 The last step is to turn on SSH, I2C, SPI, and Serial. You can do this in the Raspberry Pi Main Menu via Menu > Preferences > Control Centre > Interfaces. Your Raspberry Pi will need to restart after this.
 

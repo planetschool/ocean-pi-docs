@@ -73,10 +73,10 @@ from adafruit_bme280 import basic as adafruit_bme280
 i2c_port = 1  #This is a Raspberry Pi setting
 bme280_address = 0x77  #The address of our sensor
 i2c = board.I2C()  #Accessing the I2C library
-bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c, int(bme280_address)) #Accessing the BME280 library
-humidity = bme280.humidity  #Get humidity from the sensor
+bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c, int(bme280_address)) #Accessing the BME280 library and connect to sensor via I2C
 
 ## The Code!
+humidity = bme280.humidity  #Get humidity from the sensor
 print(humidity)
 ```
 

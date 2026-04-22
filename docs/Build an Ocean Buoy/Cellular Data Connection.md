@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 Working from these instructions: https://dev.blues.io/quickstart/notecard-quickstart/notecard-and-notecarrier-pi/#notecard-quickstart
