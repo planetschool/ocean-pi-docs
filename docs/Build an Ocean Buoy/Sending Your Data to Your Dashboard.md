@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Getting Your First Sensor Working
+# Sending Your Data to Your Dashboard
 
 In the last section, you successfully grabbed humidity data from the BME280 sensor. Well done! Now we want to send that data from the Raspberry Pi to a publicly viewable dashboard. We are going to be using the service Thingsboard for this. They offer a "forever free" account that supports up to five devices, five dashboards, and sending 1 million packets of data per month, which should be more than enough for this project. You can open your account [here](https://thingsboard.cloud/signup)
 
