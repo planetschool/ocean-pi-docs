@@ -79,6 +79,8 @@ humidity = bme280.humidity  #Get humidity from the sensor
 print(humidity)
 ```
 
+The last step is to quit Terminal and reopen it. Now everytime it opens, it will open with this new variable.
+
 ## Send Your First Data Packet
 
 Now that your token is safely on your Raspberry Pi and not floating out there in the wild Internet, we can add a few more lines of code to establish the connection to Thingsboard. Add the following to your `## Dashboard` section:
