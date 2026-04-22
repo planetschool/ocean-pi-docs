@@ -4,7 +4,11 @@ sidebar_position: 4
 
 # Sending Your Data to Your Dashboard
 
-In the last section, you successfully grabbed humidity data from the BME280 sensor. Well done! Now we want to send that data from the Raspberry Pi to a publicly viewable dashboard. We are going to be using the service Thingsboard for this. They offer a "forever free" account that supports up to five devices, five dashboards, and sending 1 million packets of data per month, which should be more than enough for this project. You can open your account [here](https://thingsboard.cloud/signup)
+In the last section, you successfully grabbed humidity data from the BME280 sensor. Well done! Now we want to send that data from the Raspberry Pi to a publicly viewable dashboard. 
+
+## Create Your Account and a New Device
+
+We are going to be using the service Thingsboard for this. They offer a "forever free" account that supports up to five devices, five dashboards, and sending 1 million packets of data per month, which should be more than enough for this project. You can open your account [here](https://thingsboard.cloud/signup)
 
 Once you have your account, log in and create a new device. You can find "Devices" in the left navigation panel under "Entities." Your device list will be empty, so click "+ Add device" and name it whatever you like. In the screenshot below, we already have several devices added already from our student projects. 
 
@@ -48,7 +52,7 @@ sudo nano ~/.bashrc
 Once you type this, your Terminal will open a document called ".bashrc". Use the down arrow on your keyboard to scroll all the way to the bottom of this document. After the very last line, add: 
 
 ```bash
-THINGSBOARD_TOKEN = “al66SHBwYLSHRBuZrRwh”
+export THINGSBOARD_TOKEN = “al66SHBwYLSHRBuZrRwh”
 ```
 
 ![Editing bashrc](./img/edit_bashrc.png)
@@ -73,4 +77,18 @@ THINGSBOARD_TOKEN = os.environ.get("THINGSBOARD_TOKEN")
 ## The Code!
 humidity = bme280.humidity  #Get humidity from the sensor
 print(humidity)
+```
+
+Now that your token is safely on your Raspberry Pi and not floating out there in the wild Internet, we can add a few more lines of code to establish the connection to Thingsboard. Add the following to your `## Dashboard` section:
+
+```python
+## Dashboard
+THINGSBOARD_TOKEN = os.environ.get("THINGSBOARD_TOKEN")
+THINGSBOARD_HOST = "thingsboard.cloud"
+PORT = 1883
+MQTT_TOPIC = "v1/devices/me/telemetry"
+client = mqtt.Client()
+client.username_pw_set(THINGSBOARD_TOKEN)
+client.connect(THINGSBOARD_HOST, PORT, 60)
+client.loop_start()
 ```
