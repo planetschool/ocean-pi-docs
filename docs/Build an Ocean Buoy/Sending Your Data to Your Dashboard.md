@@ -79,6 +79,8 @@ humidity = bme280.humidity  #Get humidity from the sensor
 print(humidity)
 ```
 
+## Send Your First Data Packet
+
 Now that your token is safely on your Raspberry Pi and not floating out there in the wild Internet, we can add a few more lines of code to establish the connection to Thingsboard. Add the following to your `## Dashboard` section:
 
 ```python
@@ -92,3 +94,44 @@ client.username_pw_set(THINGSBOARD_TOKEN)
 client.connect(THINGSBOARD_HOST, PORT, 60)
 client.loop_start()
 ```
+
+You also need to import two more libraries for sending data. Add `import paho.mqtt.client as mqtt` and `import json` to your `## Import Libraries` section. With all of this done, you should be establishing a successful connection to your Thingsboard account when your code runs. Now we just need to package your data and send it.
+
+Thingsboard accepts data in the json format. In Python, you can send information using a dictionary. We will create an empty dictionary called `data` and then add data to it as we get it from the sensors. Remember, dictionaries use key/value pairs to store data. You lookup data using a key. Add the following to your `## The Code!` section:
+
+```python
+## The Code!
+humidity = bme280.humidity  #Get humidity from the sensor
+print(humidity)
+data = {}
+data["humidity"] = humidity
+client.publish(MQTT_TOPIC, json.dumps(data))
+```
+
+After all of these additions, your code should look like this:
+
+```python
+## Import Libraries
+import board
+from adafruit_bme280 import basic as adafruit_bme280
+import os
+import json
+import paho.mqtt.client as mqtt
+
+## Declare Variables
+i2c_port = 1  #This is a Raspberry Pi setting
+bme280_address = 0x77  #The address of our sensor
+i2c = board.I2C()  #Accessing the I2C library
+bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c, int(bme280_address)) #Accessing the BME280 library and connect to sensor via I2C
+
+## Dashboard
+THINGSBOARD_TOKEN = os.environ.get("THINGSBOARD_TOKEN")
+
+## The Code!
+humidity = bme280.humidity  #Get humidity from the sensor
+print(humidity)
+data = {}
+data["humidity"] = humidity
+client.publish(MQTT_TOPIC, json.dumps(data))
+```
+
