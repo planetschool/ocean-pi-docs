@@ -42,3 +42,10 @@ turbidity_sensor = AnalogIn(ads_dfrobot, ads1x15.Pin.A1)
 
 ## Adding the Analog Sensor
 Now we can add the sensor. Your analog sensor will have a positive wire, negative wire, and data wire. The positive wire and negative wire will share the 3.3 volt and ground bars on the breadboard, respectively. The data wire will go to any one of the four analog ports on the ADC: A0, A1, A2, or A3. Whichever one you pick, just be sure that it matches the `AnalogIn` for the sensor variable you created. In the code above, we created a variable called `turbidity_sensor` and put it on `A1`.
+
+```python
+data["turbidity_value"] = turbidity_sensor.value
+data["turbidity_volts"] = turbidity_sensor.volts
+```
+
+The voltage and value from your sensor will change based on what your sensor is sensing. In other words, we need to interpret it. We need to read the sensor documentation to know what temperature 
