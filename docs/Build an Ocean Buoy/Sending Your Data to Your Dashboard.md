@@ -52,12 +52,12 @@ sudo nano ~/.bashrc
 Once you type this, your Terminal will open a document called ".bashrc". Use the down arrow on your keyboard to scroll all the way to the bottom of this document. After the very last line, add: 
 
 ```bash
-export THINGSBOARD_TOKEN = “al66SHBwYLSHRBuZrRwh”
+export THINGSBOARD_TOKEN=“al66SHBwYLSHRBuZrRwh”
 ```
 
 ![Editing bashrc](./img/edit_bashrc.png)
 
-Be sure to replace my fake token above with your actual token. To save, hit CTRL+X on your keyboard and type "Y" when asked if you want to save your changes. Now we can replace the token in your code with a command to grab the variable `THINGSBOARD_TOKEN` from the Raspberry Pi operating system. We will need to import a library called `os` in order to do this, so notice the two changes to your code below:
+Be sure to replace my fake token above with your actual token. And also make sure there are no spaces on either side of the `=` or you will get an error. To save, hit CTRL+X on your keyboard and type "Y" when asked if you want to save your changes. After you type "Y", it will ask you for a filename: just hit "Enter" to keep the filename the same. Lastly, close Terminal and reopen it. Now we can replace the token in your code with a command to grab the variable `THINGSBOARD_TOKEN` from the Raspberry Pi operating system. We will need to import a library called `os` in order to do this, so notice the two changes to your code below:
 
 ```python
 ## Import Libraries
