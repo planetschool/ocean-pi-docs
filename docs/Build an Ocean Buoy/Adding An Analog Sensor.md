@@ -34,9 +34,10 @@ Before you actually attach a sensor to your ADC, let's make sure your Raspberry 
 Since we know from earlier that BME280 is at the 0x77 address, the ADC must be at 0x48. So we can add that to our code along with the libraries needed for the ADC. Add the following two lines of code to their proper places, `## Import Libraries` and `## Declare Variables`.
 
 ```python
-from adafruit_ads1x15 import ADS1115, AnalogIn, ads1x15
+from adafruit_ads1x15.ads1115 as ADS
+from adafruit_ads1x15.analog_in import AnalogIn
 adc_address = 0x48	
-adc = ADS1115(i2c, address=int(adc_address))
+adc = ADS.ADS1115(i2c, address=int(adc_address))
 turbidity_sensor = AnalogIn(ads_dfrobot, ads1x15.Pin.A1)
 ```
 

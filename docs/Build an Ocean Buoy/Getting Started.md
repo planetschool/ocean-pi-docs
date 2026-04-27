@@ -82,7 +82,7 @@ With your virtual environment active, run the following commands:
 pip3 install gpiozero
 
 ```jsx
-pip3 install gpiozero pyserial board smbus2 paho-mqtt adafruit-blinka adafruit_ads1x15
+pip3 install gpiozero pyserial board smbus2 paho-mqtt adafruit-blinka adafruit-circuitpython-ads1x15
 ```
 
 **Note:** If you try and install these packages without your virtual environment activated, you will get an error from your Raspberry Pi: `error: externally-managed-environment` . This error is designed to protect your Raspberry Pi’s system version of Python from being tampered with. Since these packages all come from reputable sources, you could follow the error’s suggestion and add 
