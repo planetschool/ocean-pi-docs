@@ -1,4 +1,8 @@
-# Adding An Analog Sensor
+---
+sidebar_position: 5
+---
+
+# 5. Adding An Analog Sensor
 
 Unless you are using higher end, more expensive lab-grade sensors like what we have installed in our aquaculture lab and on *Wonder*, the water conductivity sensor, water temperature sensor, and turbidity sensor you are using are analog sensors. The Raspberry Pi does not have an analog GPIO pin, so we need to use a converter. 
 

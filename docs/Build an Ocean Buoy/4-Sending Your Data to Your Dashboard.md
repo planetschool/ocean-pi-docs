@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Sending Your Data to Your Dashboard
+# 4. Sending Your Data to Your Dashboard
 
 In the last section, you successfully grabbed humidity data from the BME280 sensor. Well done! Now we want to send that data from the Raspberry Pi to a publicly viewable dashboard. 
 

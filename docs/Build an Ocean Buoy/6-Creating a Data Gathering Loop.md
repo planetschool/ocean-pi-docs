@@ -1,8 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
-# Creating a Data Gathering Loop
+# 6. Creating a Data Gathering Loop
 
 Nice work, you just got a piece of data from your analog sensor! You now have data coming digitally via I2C from the BME280 sensor and analog data coming from the turbidity sensor in the form of voltage. That analog data is sent to an analog to digital converter (ADC) and then it too is sent via I2C. This is huge progress!
 
