@@ -2,11 +2,13 @@
 sidebar_position: 2
 ---
 
+# 2. Getting Started
+
 Before you begin this project, please consider completing our Ocean Creature GIF project first, which is a good introduction for Python and Raspberry Pi beginners. We will be building on skills that were introduced in that project.
 
 This project cannot be completed using the Trinket emulator; it requires a physical Raspberry Pi and additional hardware depending on how far you go. We will list all of the hardware we have used in our installations. If you make modifications or additions, we would love to know about how it goes!
 
-# Setup
+## Setup
 
 We will begin this project with a freshly installed version of the latest Raspberry Pi Operating System (OS), which as of this writing is Debian 13 (trixie). If you have not done this, follow the instructions on the [Raspberry Pi website](https://www.raspberrypi.com/software/) for downloading the Raspberry Pi Imager.
 

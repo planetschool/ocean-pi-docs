@@ -48,4 +48,4 @@ data["turbidity_value"] = turbidity_sensor.value
 data["turbidity_volts"] = turbidity_sensor.voltage
 ```
 
-The voltage and value from your sensor will change based on what your sensor is sensing. In other words, we need to interpret it. We need to read the sensor documentation to know what temperature 
+The voltage and value from your sensor will change based on what your sensor is sensing. In other words, we need to interpret it. We need to read the sensor documentation to know how turbidity, temperature, and conductivity can be inferred from changes in the sensor's voltage.

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Introduction
+# 1. Introduction
 
 In this project, you will design and build a scientific buoy using real lab-grade instruments to monitor the ocean or other body of water of your choosing. 
 

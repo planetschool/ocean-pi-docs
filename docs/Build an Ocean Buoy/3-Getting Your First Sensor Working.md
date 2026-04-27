@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Getting Your First Sensor Working
+# 3. Getting Your First Sensor Working
 
 We will use two types of sensors in this project: analog and digital. For a discussion of the differences between these two types of sensors, have a look at [this article by Atlas Scientific](https://atlas-scientific.com/blog/analog-vs-digital-sensors-understanding-the-key-differences/). We will use an Analog-to-Digital Converter (ADC) to turn analog sensor output into a digital value that we can manipulate with our code. The digital sensor outputs already show up as digital values that we can work with, so we will start there.
 
@@ -94,6 +94,6 @@ If you get the error `ModuleNotFoundError: No module named 'adafruit_bme280'` th
 
 **🎉 You Did It!**
 
-Time to move onto [Step 3](https://www.notion.so/2aa729464eca80ea97d5cf68ee341b51?pvs=21)
+Time to move onto Step 3
 
 ## Questions After This Stage
