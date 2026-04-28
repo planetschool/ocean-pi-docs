@@ -166,3 +166,5 @@ while True:
 ```
 
 Notice that I added two comment lines to break up and label what is happening inside the loop.
+
+Once this is all done, save your code and run it from the terminal like you have been doing throughout this project. You will see more status updates as your program establishes the connection to Thingsboard. Double check that your data is still showing up in your device telemetry. If everything is working, you can reboot your Raspberry Pi and check to see if data starts streaming to Thingsboard automatically. Be sure to give it at least 30-60 seconds to start up and begin broadcasting from the moment you power on your Raspberry Pi.
