@@ -45,7 +45,7 @@ We have just created a service that will run when the Raspberry Pi boots up. Now
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable oceanpi.service
-sudo systemctl start oceanpi-service
+sudo systemctl start oceanpi.service
 journalctl -u oceanpi.service -f --no-pager
 ```
 
