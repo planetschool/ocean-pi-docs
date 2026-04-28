@@ -121,13 +121,6 @@ Similarly, in our `while` loop, we want to modify the commands to send the data 
 ## The Code!
 data = {}
 while True:
-    import board
-    from adafruit_bme280 import basic as adafruit_bme280
-    i2c_port = 1  #This is a Raspberry Pi setting
-    bme280_address = 0x77  #The address of our sensor
-    i2c = board.I2C()  #Accessing the I2C library
-    bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c, int(bme280_address)) #Accessing the BME280 library and connect to sensor via I2C
-
     data["humidity"] = bme280.humidity #Get humidity from the sensor
     data["turbidity_value"] = turbidity_sensor.value #Get value from the analog sensor
     data["turbidity_volts"] = turbidity_sensor.voltage #Get voltage from the analog sensor
