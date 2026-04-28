@@ -128,6 +128,13 @@ bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c, int(bme280_address)) #Accessin
 
 ## Dashboard
 THINGSBOARD_TOKEN = os.environ.get("THINGSBOARD_TOKEN")
+THINGSBOARD_HOST = "thingsboard.cloud"
+PORT = 1883
+MQTT_TOPIC = "v1/devices/me/telemetry"
+client = mqtt.Client()
+client.username_pw_set(THINGSBOARD_TOKEN)
+client.connect(THINGSBOARD_HOST, PORT, 60)
+client.loop_start()
 
 ## The Code!
 humidity = bme280.humidity  #Get humidity from the sensor
